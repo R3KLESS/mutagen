@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{4DE53D03-4EA4-6A17-C0A9-149B05C97844}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "mutagen",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
