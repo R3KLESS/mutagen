@@ -6,6 +6,6 @@ public class mutagen : ModuleRules
 {
 	public mutagen(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore","UMG" ,"HeadMountedDisplay" });
 	}
 }
