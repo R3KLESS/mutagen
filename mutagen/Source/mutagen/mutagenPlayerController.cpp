@@ -12,13 +12,21 @@ void AmutagenPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// check if the player controller is locally owned 
+	setupLoginWidget();
+
+	
+}
+
+// this function creates the login screen widget
+void AmutagenPlayerController::setupLoginWidget()
+{
+	// check to see if the player controller is locally owned 
 	if (IsLocalPlayerController())
 	{
 		// create the widget and assign it to the loginWidgetRef variable
 		loginWidgetRef = CreateWidget<UmutagenUserWidget>(this, widgetTemplateClass);
 
-		// chedk to make sure its not null or not assigned
+		// check to make sure its not null or not assigned
 		if (loginWidgetRef)
 		{
 			// add the widget to players viewport

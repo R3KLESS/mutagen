@@ -12,8 +12,10 @@ UCLASS()
 class MUTAGEN_API UmutagenUserWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	
-	
-	
-	
+
+
 };
+
+
+
+

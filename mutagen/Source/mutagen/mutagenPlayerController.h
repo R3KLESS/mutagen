@@ -30,5 +30,10 @@ public:
 	void BeginPlay() override;
 
 
+private:
+
+	void setupLoginWidget();
+
+
 	
 };
