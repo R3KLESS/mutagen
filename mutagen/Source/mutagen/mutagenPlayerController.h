@@ -46,4 +46,10 @@ private:
 	// a function called on begin play which creates the login screen widget
 	void setupScreenResolution();
 
+	// a function to override the setupInputComponent function so that we can bind events
+	void AmutagenPlayerController::SetupInputComponent() override;
+
+	// function to show the loginScreen
+		void showLoginScreen();
+
 };

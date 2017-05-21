@@ -70,3 +70,16 @@ void AmutagenPlayerController::setupLoginWidget()
 		
 
 }
+
+  //a function to override the setupInputComponent function so that we can bind events
+  void AmutagenPlayerController::SetupInputComponent()
+  {
+	  Super::SetupInputComponent();
+	  InputComponent->BindAction("enterKeyPress", IE_Pressed, this, &AmutagenPlayerController::showLoginScreen);
+  }
+
+  // function to setup the loginScreen
+  void AmutagenPlayerController::showLoginScreen()
+  {
+	  loginWidgetRef->showLoginPanel2();
+  }
