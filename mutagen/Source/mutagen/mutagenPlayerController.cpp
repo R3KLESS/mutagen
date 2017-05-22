@@ -10,6 +10,7 @@ AmutagenPlayerController::AmutagenPlayerController()
 	:
 	APlayerController()
 {
+	bIsShowingLoginScreen = false;
 
 }
 
@@ -39,6 +40,7 @@ void AmutagenPlayerController::setupLoginWidget()
 			
 			// set the player controller input mode to GameOnly
 			this->SetInputMode(FInputModeGameOnly());
+
 		}
 	}
 }
@@ -81,5 +83,11 @@ void AmutagenPlayerController::setupLoginWidget()
   // function to setup the loginScreen
   void AmutagenPlayerController::showLoginScreen()
   {
-	  loginWidgetRef->showLoginPanel2();
+	  // we only want to call this function if the loginscreen isnt already displayed
+	  if (!bIsShowingLoginScreen)
+	  {
+		loginWidgetRef->showLoginPanelEvent();
+		this->bShowMouseCursor = true;
+	  }
+	  
   }
