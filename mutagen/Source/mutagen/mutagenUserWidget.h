@@ -15,9 +15,9 @@ class MUTAGEN_API UmutagenUserWidget : public UUserWidget
 
 public:
 
-	UFUNCTION(BlueprintImplementableEvent)
-		void showLoginPanel2();
-
+	// this is a custom event called from c++ but implemented in BP to show the login panel
+	UFUNCTION(BlueprintImplementableEvent, Category = " My custom events" )
+		void showLoginPanelEvent();
 
 };
 

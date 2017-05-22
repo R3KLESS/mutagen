@@ -20,8 +20,8 @@ protected:
 		 UPROPERTY()
 		TSubclassOf<UmutagenUserWidget> widgetTemplateClass;
 
-	// variable for the loginwidget instance reference
-	UPROPERTY(BlueprintReadOnly, NoClear, Category = "My Widgets")
+	// variable reference for the loginwidget instance reference
+	UPROPERTY(BlueprintReadOnly, NoClear, Category = " References | Widgets")
 		UmutagenUserWidget* loginWidgetRef;
 
 public:
@@ -33,6 +33,9 @@ public:
 
 
 private:
+
+	// bool to signify if we are showing the login screen or not
+	bool bIsShowingLoginScreen;
 
 	// pointer to hold the gameusersettings
 	UGameUserSettings* userSettings;
