@@ -20,13 +20,16 @@ protected:
 		 UPROPERTY()
 		TSubclassOf<UmutagenUserWidget> widgetTemplateClass;
 
+public:
+
+	// Constructor
+	AmutagenPlayerController();
+
 	// variable reference for the loginwidget instance reference
 	UPROPERTY(BlueprintReadOnly, NoClear, Category = " References | Widgets")
 		UmutagenUserWidget* loginWidgetRef;
 
-public:
 
-	AmutagenPlayerController();
 
 	// override the begin play function
 	void BeginPlay() override;
